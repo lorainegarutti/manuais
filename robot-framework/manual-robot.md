@@ -20,10 +20,12 @@
 </p>
 
 <p>
-  O Robot Framework roda em Python e precisa ter o Node instalado na máquina para conseguir rodar as automatizações.
-  <br />
-  Para o setup, é necessário configurar as variáveis de ambiente JAVA_HOME e ANDROID_HOME, bem como a instalação do Appium para Desktop (auxílio na inspeção de elementos)
-  <br />
+  <b>
+    O Robot Framework roda em Python e precisa ter o Node instalado na máquina para conseguir rodar as automatizações.
+    <br />
+    Para o setup, é necessário configurar as variáveis de ambiente JAVA_HOME e ANDROID_HOME, bem como a instalação do Appium para Desktop (auxílio na inspeção de elementos)
+    <br />
+  </b>
   <a href="https://github.com/clarabez/appium" target="_blank" rel="noopener noreferrer">Clique aqui para acompanhar o manual de configuração da Maria Clara.</a>
 </p>
 
