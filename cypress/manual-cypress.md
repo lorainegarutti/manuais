@@ -93,15 +93,14 @@
   Explicando cada linha do ‘package.json’
 </h3>
 
-<p>
-  <li>
-
+<li>
+  <p>
     ```bash
     "cy:open": "cypress open"
     ```
     Ao comandar ‘npm run cy:open’ no terminal você abre o módulo desktop do Cypress para rodar suas specs de teste.
-  </li>
-</p>
+  </p>
+</li>
 
 <p>
 
