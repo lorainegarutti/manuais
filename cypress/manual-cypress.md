@@ -95,7 +95,6 @@
 
 <li>
   Para abrir o módulo desktop do Cypress:
-  <br />
 
   ```bash
   "cy:open": "cypress open"
