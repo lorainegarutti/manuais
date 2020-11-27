@@ -79,7 +79,7 @@ npm install --save-dev mochawesome mochawesome-merge mochawesome-report-generato
 </p>
 
 <h3>
-  Configure scripts para facilitar os comandos do Reporter
+  Configure scripts para facilitar os comandos do Reporter no arquivo 'package.json' (na raiz do projeto)
 </h3>
 
 <p>
@@ -87,7 +87,7 @@ npm install --save-dev mochawesome mochawesome-merge mochawesome-report-generato
 </p>
 
 <h3>
-  Explicando linha a linha do ‘package.json’
+  Explicando cada linha do ‘package.json’
 </h3>
 
 <p>
@@ -96,6 +96,7 @@ npm install --save-dev mochawesome mochawesome-merge mochawesome-report-generato
 "cy:open": "cypress open"
 ```
 Ao comandar ‘npm run cy:open’ no terminal você abre o módulo desktop do Cypress para rodar suas specs de teste.
+<br />
 </p>
 
 <p>
@@ -105,6 +106,7 @@ Ao comandar ‘npm run cy:open’ no terminal você abre o módulo desktop do Cy
 ```
 Ao comandar ‘npm run cy:run’ no terminal você roda as specs de teste no formato ‘headless’, sem abrir o módulo desktop —
 geralmente utilizando o navegador Electron, gravando as execuções em ‘cypress/videos/…’ .
+<br />
 </p>
 
 <p>
@@ -120,6 +122,7 @@ e
 Ao comandar ‘npm run report:cleanup’ e ‘npm run video:cleanup’ no terminal você limpa o conteúdo da pasta
 ‘cypress/report/…’ e da ‘cypress/videos/…’ . Normalmente rodo esse comando quando preciso rodar os testes novamente e
 não quero me confundir com os relatórios/vídeos gerados anteriormente.
+<br />
 </p>
 
 <p>
@@ -130,6 +133,7 @@ não quero me confundir com os relatórios/vídeos gerados anteriormente.
 Ao comandar ‘npm run test:e2e’ no terminal você roda todos os testes no Chrome, sem abrir visualmente o navegador e sem
 fechá-lo a cada mudança de arquivo de teste. Gerará os relatórios em .json separado por arquivos de teste, na pasta
 ‘cypress/report/mochawesome-report’
+<br />
 </p>
 
 <p>
@@ -138,6 +142,7 @@ fechá-lo a cada mudança de arquivo de teste. Gerará os relatórios em .json s
 "report:merge": "mochawesome-merge cypress/report/mochawesome-report/*.json > cypress/report/output.json"
 ```
 Ao comandar ‘npm run report:merge’ no terminal você unifica todos os testes .json em ‘cypress/report/output.json’.
+<br />
 </p>
 
 <p>
@@ -147,4 +152,5 @@ Ao comandar ‘npm run report:merge’ no terminal você unifica todos os testes
 ```
 Ao comandar ‘npm run report:generate’ no terminal você transforma o output.json em output.html
 (‘cypress/report/output.html’)
+<br />
 </p>
