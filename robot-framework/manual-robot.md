@@ -44,7 +44,7 @@
   <br /><br />
   Instale a versão oficial para rodar o Python:
   <p>
-    <img src="./images/robot1.png">
+    <img width="50%" src="./images/robot1.png">
   </p>
   
   E também a extensão do Robot Framework Intellisense (ele te ajudará em sintaxes próprias dos arquivos de teste '.resource' e '.robot'):
