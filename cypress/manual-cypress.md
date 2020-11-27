@@ -61,22 +61,32 @@ npm install --save-dev mochawesome mochawesome-merge mochawesome-report-generato
 ```
 </p>
 
-<br />
 <h3>
-  E depois de rodar esses comandos, a estrutura de pastas ficará parecida com esta:
+  E depois de rodar esses comandos, a estrutura de pastas será assim:
 </h3>
 
 <img src="./images/cypress2.png">
 
-<br /><br />
+<br />
+<h3>
+  Ajuste as configurações do Reporter no arquivo 'cypress.json' (na raiz do projeto)
+</h3>
 
 <img src="./images/cypress3.png">
-cypress.json
+
+<br />
+<h3>
+  Configure scripts para facilitar os comandos do Reporter
+</h3>
 
 <img src="./images/cypress4.png">
-package.json
 
-Explicando linha a linha do ‘package.json’:
+<br />
+<h3>
+  Explicando linha a linha do ‘package.json’
+</h3>
+
+
 Obs: o nome do comando (a parte antes dos dois pontos) pode ser personalizada por você.
 >> "cy:open": "cypress open"
 Ao comandar ‘npm run cy:open’ no terminal você abre o módulo desktop do Cypress para rodar suas specs de teste.
