@@ -66,51 +66,85 @@ npm install --save-dev mochawesome mochawesome-merge mochawesome-report-generato
   E depois de rodar esses comandos, a estrutura de pastas será assim:
 </h3>
 
+<p>
 <img src="./images/cypress2.png">
+</p>
 
-<br />
 <h3>
   Ajuste as configurações do Reporter no arquivo 'cypress.json' (na raiz do projeto)
 </h3>
 
+<p>
 <img src="./images/cypress3.png">
+</p>
 
-<br />
 <h3>
   Configure scripts para facilitar os comandos do Reporter
 </h3>
 
+<p>
 <img src="./images/cypress4.png">
+</p>
 
-<br />
 <h3>
   Explicando linha a linha do ‘package.json’
 </h3>
 
+<p>
 
-Obs: o nome do comando (a parte antes dos dois pontos) pode ser personalizada por você.
->> "cy:open": "cypress open"
+```bash
+"cy:open": "cypress open"
+```
 Ao comandar ‘npm run cy:open’ no terminal você abre o módulo desktop do Cypress para rodar suas specs de teste.
+</p>
 
->> "cy:run": "cypress run"
+<p>
+
+```bash
+"cy:run": "cypress run"
+```
 Ao comandar ‘npm run cy:run’ no terminal você roda as specs de teste no formato ‘headless’, sem abrir o módulo desktop —
 geralmente utilizando o navegador Electron, gravando as execuções em ‘cypress/videos/…’ .
+</p>
 
->> "report:cleanup": "rm -fr cypress/report/"
+<p>
+
+```bash
+"report:cleanup": "rm -fr cypress/report/"
+```
 e
->> "video:cleanup": "rm -fr cypress/videos/"
+
+```bash
+"video:cleanup": "rm -fr cypress/videos/"
+```
 Ao comandar ‘npm run report:cleanup’ e ‘npm run video:cleanup’ no terminal você limpa o conteúdo da pasta
 ‘cypress/report/…’ e da ‘cypress/videos/…’ . Normalmente rodo esse comando quando preciso rodar os testes novamente e
 não quero me confundir com os relatórios/vídeos gerados anteriormente.
+</p>
 
->> "test:e2e": "cypress run --headless --browser chrome --no-exit"
+<p>
+
+```bash
+"test:e2e": "cypress run --headless --browser chrome --no-exit"
+```
 Ao comandar ‘npm run test:e2e’ no terminal você roda todos os testes no Chrome, sem abrir visualmente o navegador e sem
 fechá-lo a cada mudança de arquivo de teste. Gerará os relatórios em .json separado por arquivos de teste, na pasta
 ‘cypress/report/mochawesome-report’
+</p>
 
->> "report:merge": "mochawesome-merge cypress/report/mochawesome-report/*.json > cypress/report/output.json"
+<p>
+
+```bash
+"report:merge": "mochawesome-merge cypress/report/mochawesome-report/*.json > cypress/report/output.json"
+```
 Ao comandar ‘npm run report:merge’ no terminal você unifica todos os testes .json em ‘cypress/report/output.json’.
+</p>
 
->> "report:generate": "marge cypress/report/output.json --reportDir ./ --inline"
+<p>
+
+```bash
+"report:generate": "marge cypress/report/output.json --reportDir ./ --inline"
+```
 Ao comandar ‘npm run report:generate’ no terminal você transforma o output.json em output.html
 (‘cypress/report/output.html’)
+</p>
