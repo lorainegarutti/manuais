@@ -44,11 +44,11 @@
   <br /><br />
   Instale a versão oficial para rodar o Python:
   <p>
-    <img width="50%" src="./images/robot1.png">
+    <img width="100" src="./images/robot1.png">
   </p>
   
   E também a extensão do Robot Framework Intellisense (ele te ajudará em sintaxes próprias dos arquivos de teste '.resource' e '.robot'):
   <p>
-    <img src="./images/robot2.png">
+    <img width="200" src="./images/robot2.png">
   </p>
 </p>
