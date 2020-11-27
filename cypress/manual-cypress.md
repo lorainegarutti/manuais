@@ -94,62 +94,54 @@
 </h3>
 
 <li>
-  Para abrir o módulo desktop do Cypress para rodar suas specs de teste.
+  Para abrir o módulo desktop do Cypress:
+  <br />
 
   ```bash
   "cy:open": "cypress open"
   ```
 </li>
 
-<p>
+<li>
+  Para rodar as specs de teste no formato 'headless' (usa Electron por default):
 
   ```bash
   "cy:run": "cypress run"
   ```
-  Ao comandar ‘npm run cy:run’ no terminal você roda as specs de teste no formato ‘headless’, sem abrir o módulo desktop
-  —
-  geralmente utilizando o navegador Electron, gravando as execuções em ‘cypress/videos/…’ .
-</p>
+</li>
 
-<p>
+<li>
+  Para apagar as pastas de relatórios e vídeos antigos:
 
   ```bash
   "report:cleanup": "rm -fr cypress/report/"
   ```
-  e
 
   ```bash
   "video:cleanup": "rm -fr cypress/videos/"
   ```
-  Ao comandar ‘npm run report:cleanup’ e ‘npm run video:cleanup’ no terminal você limpa o conteúdo da pasta
-  ‘cypress/report/…’ e da ‘cypress/videos/…’ . Normalmente rodo esse comando quando preciso rodar os testes novamente e
-  não quero me confundir com os relatórios/vídeos gerados anteriormente.
-</p>
+</li>
 
-<p>
+<li>
+  Para rodar os testes no Chrome, em modo 'headless', e gerar os relatórios na extensão '.json' na pasta ‘cypress/report/mochawesome-report’:
 
   ```bash
-  "test:e2e": "cypress run --headless --browser chrome --no-exit"
+  "test:e2e": "cypress run --headless --browser chrome"
   ```
-  Ao comandar ‘npm run test:e2e’ no terminal você roda todos os testes no Chrome, sem abrir visualmente o navegador e
-  sem
-  fechá-lo a cada mudança de arquivo de teste. Gerará os relatórios em .json separado por arquivos de teste, na pasta
-  ‘cypress/report/mochawesome-report’
-</p>
+</li>
 
-<p>
+<li>
+  Para unificar todos os relatórios de teste no 'cypress/report/output.json’:
 
   ```bash
   "report:merge": "mochawesome-merge cypress/report/mochawesome-report/*.json > cypress/report/output.json"
   ```
-  Ao comandar ‘npm run report:merge’ no terminal você unifica todos os testes .json em ‘cypress/report/output.json’.
-</p>
+</li>
 
-<p>
+<li>
+  Para transformar o relatório em extensão html (‘cypress/report/output.html’):
 
   ```bash
   "report:generate": "marge cypress/report/output.json --reportDir ./ --inline"
   ```
-  Ao comandar ‘npm run report:generate’ no terminal você transforma o output.json em output.html
-  (‘cypress/report/output.html’)
-</p>
+</li>
