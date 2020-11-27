@@ -36,7 +36,8 @@ npm --save-dev cypress
 3. Você também precisará instalar o Cypress para desktop para usufruir do <i>selector playground</i>
 (vai te ajudar a muito a localizar os elementos!):
 <br />
-Link para download: <a href="https://download.cypress.io/desktop" target="_blank" rel="noopener noreferrer">Cypress versão para desktop</a>
+<h5>Link para download: <a href="https://download.cypress.io/desktop" target="_blank" rel="noopener noreferrer">Cypress versão para desktop</a>
+</h5>
 </p>
 
 <p>
